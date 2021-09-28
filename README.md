@@ -17,7 +17,9 @@ extern "C"
 
 
 int main(void) 
+
 {
+	
 	DELAY::INIT();
 	PIN *A0 = new PIN("A0", pinSpeed::NORMAL, pinMode::OUT, pinType::PushPull, pinPuPd::NOPULL);
 
