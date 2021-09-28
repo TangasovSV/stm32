@@ -6,7 +6,10 @@ Now realized pin, interrupts and delay\timeout classes.
 Do not use DELAY::MS or DELAY::US inside DELAY::TimeOut!!!!
 
 
+
 EXAMPLE Code:
+_____________________________________________________________________________________________________
+
 
 #include "delay.h"
 #include "pin.h"
