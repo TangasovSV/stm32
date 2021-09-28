@@ -23,6 +23,7 @@ int main(void)
 
 {
 	// Init pin and SysTick	
+	
 	DELAY::INIT();
 	PIN *A0 = new PIN("A0", pinSpeed::NORMAL, pinMode::OUT, pinType::PushPull, pinPuPd::NOPULL);
 
