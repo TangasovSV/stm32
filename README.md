@@ -19,9 +19,8 @@ extern "C"
 #endif
 
 
-int main(void) 
+int main(void) {
 
-{
 	// Init pin and SysTick	
 	
 	DELAY::INIT();
