@@ -27,12 +27,6 @@ int DELAY::GetTick() {
 	return Sys_Ticks;
 }
 
-void DELAY::US(uint16_t value) {
-	SysTick->VAL = 0;
-	SysTick->LOAD = (SystemCoreClock / 1000000 /*-1 must be here. But "minus" operation is so long...*/) * value;  // 1MHz Frequency
-	while (!(SysTick->CTRL & 0x10000)) __NOP();
-}
-
 extern "C" void SysTick_Handler(void) {
 	Sys_Ticks--;
 	if (Sys_Ticks < 1) SysTick->CTRL &= ~SysTick_CTRL_TICKINT_Msk;    // Disable IRQ
