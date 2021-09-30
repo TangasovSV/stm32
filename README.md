@@ -4,17 +4,17 @@ Simple C++ lib for stm32
 Now realized pin, interrupts and delay\timeout classes.
 
 Functions DELAY and TIMEOUT is my pain and suffering.
-0. HAL+DELAY_TIM = everything is OK. Very simple.
-1. HAL+DELAY_SYS = I can't guarantee perfect work without problem. It can became a problem or It can work fine. Depends on many other factors. This decision is on your conscience.
-2. Do not use DELAY_SYS::MS or DELAY_SYS::US inside DELAY_SYS::TimeOut! Newer!!!
+
+1. HAL+DELAY_TIM = everything is OK. Very simple.
+2. HAL+DELAY_SYS = I can't guarantee perfect work without problem. It can became a problem or It can work fine. Depends on many other factors. This decision is on your conscience.
+3. Do not use DELAY_SYS::MS or DELAY_SYS::US inside DELAY_SYS::TimeOut! Newer!!!
 
 
 
 
 
-EXAMPLE Code:
 _____________________________________________________________________________________________________
-
+EXAMPLE Code:
 
 #include "delay.h"
 #include "pin.h"
